@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio completo | Cantinho do Chef</title>
+  <meta name="description" content="Cardápio completo do Cantinho do Chef: pratos do dia, refeições completas, porções, bebidas e sobremesas. Peça pelo WhatsApp.">
+  <meta name="theme-color" content="#FBF5EA">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cantinho do Chef">
+  <meta property="og:title" content="Cardápio completo | Cantinho do Chef">
+  <meta property="og:description" content="Veja todos os pratos, porções, bebidas e sobremesas e peça pelo WhatsApp.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="data/site.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body data-page="cardapio">
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header" id="site-header"></header>
+
+  <main id="conteudo">
+    <section class="page-head" aria-labelledby="cardapio-titulo">
+      <div class="container">
+        <p class="eyebrow">Cardápio completo</p>
+        <h1 id="cardapio-titulo">Feito para abrir o apetite.</h1>
+        <p class="lead">Escolha o que quiser e peça pelo WhatsApp. O pedido abre pronto para enviar ao restaurante.</p>
+        <p class="demo-note" data-demo hidden><strong>Exemplo.</strong> Pratos, descrições e preços são dados de demonstração. Substitua pelos dados reais do restaurante em <code>data/site.js</code>.</p>
+      </div>
+    </section>
+
+    <div class="chips-wrap">
+      <nav class="container chips" id="chips" aria-label="Ir para uma categoria"></nav>
+    </div>
+
+    <div class="container menu-completo" id="menu-completo"></div>
+
+    <section class="cta-final" aria-labelledby="cta-titulo">
+      <div class="container cta-final__inner">
+        <h2 id="cta-titulo">Não achou o que procurava?</h2>
+        <p class="texto">Fale com o restaurante pelo WhatsApp e tire suas dúvidas.</p>
+        <a class="btn btn--primary" data-wa data-icon-before="chat">Falar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript">Para ver o cardápio e usar os botões de pedido, ative o JavaScript no seu navegador.</p>
+  </noscript>
+</body>
+</html>

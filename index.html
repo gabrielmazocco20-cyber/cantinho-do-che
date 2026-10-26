@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cantinho do Chef | Restaurante de comida caseira brasileira</title>
+  <meta name="description" content="Cantinho do Chef: comida caseira brasileira, ambiente acolhedor e refeições preparadas com carinho. Veja o cardápio e faça seu pedido pelo WhatsApp.">
+  <meta name="theme-color" content="#FBF5EA">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cantinho do Chef">
+  <meta property="og:title" content="Cantinho do Chef | Comida de verdade, feita com carinho">
+  <meta property="og:description" content="Comida caseira brasileira, ambiente acolhedor e pedidos pelo WhatsApp.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="data/site.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body data-page="home">
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header" id="site-header"></header>
+
+  <main id="conteudo">
+
+    <!-- 1. HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__texto">
+          <h1 id="hero-titulo">Comida de verdade, <span>feita com carinho.</span></h1>
+          <p class="lead">No Cantinho do Chef, cada refeição tem aquele sabor especial de comida caseira, preparada para deixar seu dia mais gostoso.</p>
+          <div class="botoes">
+            <a class="btn btn--primary" href="#cardapio" data-icon-after="seta">Conheça nosso cardápio</a>
+            <a class="btn btn--outline" data-wa data-icon-before="chat">Peça pelo WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__foto">
+          <div class="foto" data-foto="hero" data-prioridade></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE O RESTAURANTE -->
+    <section class="section sobre" id="restaurante" aria-labelledby="sobre-titulo">
+      <div class="container sobre__grid">
+        <div class="sobre__foto">
+          <div class="foto" data-foto="sobre"></div>
+        </div>
+        <div class="sobre__texto">
+          <p class="eyebrow">Nosso restaurante</p>
+          <h2 id="sobre-titulo">Mais do que uma refeição, um momento especial.</h2>
+          <p class="texto">O Cantinho do Chef é aquele lugar para quem valoriza comida saborosa, ambiente acolhedor e refeições preparadas com atenção aos detalhes.</p>
+          <ul class="pilares">
+            <li>Comida saborosa</li>
+            <li>Ambiente acolhedor</li>
+            <li>Atenção aos detalhes</li>
+          </ul>
+          <div id="sobre-fatos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CARDÁPIO -->
+    <section class="section cardapio" id="cardapio" aria-labelledby="cardapio-titulo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cardápio</p>
+          <h2 id="cardapio-titulo">Feito para abrir o apetite.</h2>
+          <p class="demo-note" data-demo hidden><strong>Exemplo.</strong> Pratos, descrições e preços abaixo são dados de demonstração. Substitua pelos dados reais do restaurante em <code>data/site.js</code>.</p>
+        </div>
+        <div id="menu-home"></div>
+        <div class="cardapio__mais">
+          <a class="btn btn--outline" href="cardapio.html" data-icon-after="seta">Ver cardápio completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DESTAQUE -->
+    <section class="destaque" id="destaque" aria-labelledby="destaque-titulo">
+      <div class="container">
+        <div class="foto foto--ampla" data-foto="destaque"></div>
+        <div class="destaque__card">
+          <h2 id="destaque-titulo">Tem sabor de comida feita em casa.</h2>
+          <p class="texto">Ingredientes selecionados, refeições saborosas e aquele cuidado que faz toda a diferença.</p>
+          <a class="btn btn--primary" href="#cardapio" data-icon-after="seta">Ver o cardápio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. COMO FAZER PEDIDOS -->
+    <section class="pedidos" id="pedidos" aria-labelledby="pedidos-titulo">
+      <div class="container">
+        <div class="pedidos__grid">
+          <div>
+            <p class="eyebrow">Como pedir</p>
+            <h2 id="pedidos-titulo">Seu próximo prato está a poucos cliques.</h2>
+            <p class="pedidos__lead">Escolha no cardápio, envie a mensagem pelo WhatsApp e combine os detalhes direto com o restaurante.</p>
+            <div class="botoes">
+              <a class="btn btn--primary" data-wa data-icon-before="chat">Fazer pedido pelo WhatsApp</a>
+              <span id="pedido-online"></span>
+            </div>
+            <p class="demo-note demo-note--escura" data-demo hidden><strong>Exemplo.</strong> Confirme com o restaurante se há retirada e entrega e informe os horários reais. Pedido e pagamento online não estão integrados: precisam ser configurados à parte.</p>
+          </div>
+          <aside class="atendimento" aria-label="Atendimento, retirada e entrega">
+            <h3 class="atendimento__titulo"><svg class="icon" aria-hidden="true"><use href="#i-relogio"/></svg> Horários de atendimento</h3>
+            <div id="horarios-pedidos"></div>
+            <ul class="servicos" id="servicos"></ul>
+          </aside>
+        </div>
+
+        <ol class="passos">
+          <li>
+            <h3>Escolha seus pratos</h3>
+            <p>Veja o cardápio e toque em “Pedir pelo WhatsApp” no prato que quiser.</p>
+          </li>
+          <li>
+            <h3>Envie a mensagem</h3>
+            <p>O WhatsApp abre com o pedido já escrito, pronto para enviar ao restaurante.</p>
+          </li>
+          <li>
+            <h3>Combine os detalhes</h3>
+            <p>Confirme itens, pagamento e retirada ou entrega direto na conversa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. LOCALIZAÇÃO E CONTATO -->
+    <section class="section contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Localização e contato</p>
+          <h2 id="contato-titulo">Venha nos conhecer.</h2>
+        </div>
+        <div class="contato__grid">
+          <div id="contato-info"></div>
+          <div id="contato-mapa"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript">Para ver o cardápio e usar os botões de pedido, ative o JavaScript no seu navegador.</p>
+  </noscript>
+</body>
+</html>
